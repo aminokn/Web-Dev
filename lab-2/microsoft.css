@@ -1,0 +1,21 @@
+*{
+    text-decoration: none;
+    outline: none;
+}
+.header a:hover{
+    text-decoration:underline;
+}
+.header-left img{
+    width: 108px;
+    margin: 7px 7px 18px 280px;
+}
+.header a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(38,38,38);
+
+}
+.header-left a{
+    display: inline-flex;
+    margin: 10px 13px;
+}
