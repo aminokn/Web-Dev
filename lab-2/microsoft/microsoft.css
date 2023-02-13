@@ -2,12 +2,16 @@
     text-decoration: none;
     outline: none;
 }
-.header a:hover{
+body{
+    margin: 0;
+}
+.header a:hover, .micro a:hover, .blue:hover{
     text-decoration:underline;
 }
+
 .header-left img{
     width: 108px;
-    margin: 7px 7px 18px 280px;
+    margin: 12px 7px 18px 80px;
 }
 .header a{
     font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +20,166 @@
 
 }
 .header-left a{
-    display: inline-flex;
-    margin: 10px 13px;
+    margin-left: 18px;
+    vertical-align: 23px;
+
+}
+#microsoft{
+    margin-left: 500px;
+}
+#pointer{
+    margin-left:0px;
+    margin-right: -7px;
+    width:20px;
+
+}
+#loop{
+    width: 22px;
+    margin-left: 0px;
+
+}
+#log{
+    width: 35px;
+    vertical-align: -8px;
+    margin-left: 5px;
+}
+#photo{
+    width: 100%;
+    margin-top: -8px;
+}
+.words h2, p, button{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    margin-left: 120px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+#first{
+    margin-top: -350px;
+    font-size: 35px;
+}
+#second{
+   line-height: 25px;
+   font-size: 15.5px;
+}
+.words button{
+    border: none;
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(0,103,184);
+    width: 243px;
+    height: 41px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.micro p, .micro h3, .micro a{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 73px;
+    font-size: 15px;
+}
+.micro p{
+    margin-top: -10px;
+    line-height: 25px;
+}
+.micro a{
+    vertical-align: 5px;
+    color: rgb(0,103,184);
+    font-weight: 600;
+}
+#micros{
+    width: 305px;
+    margin: 185px 73px;
+}
+.micro h3{
+    margin-top: -170px;
+    font-size: 30px;
+}
+.ptr{
+    width: 20px;
+    margin-right: -30px;
+}
+.edge p, .edge h3, .edge a{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 400px;
+    font-size: 15px;
+}
+.edge p{
+    margin-top: -10px;
+    line-height: 25px;
+}
+#edge{
+    display: flex;
+    width: 305px;
+    margin-top: -438.5px;
+    margin-left: 400px;
+}
+.edge h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.edge a{
+    vertical-align: 5px;
+    color: rgb(0,103,184);
+}
+.blue{
+    font-weight: 600;
+}
+.onedrive p, .onedrive h3, .onedrive a{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 727px;
+    font-size: 15px;
+}
+.onedrive p{
+    margin-top: -10px;
+    line-height: 25px;
+}
+#onedrive{
+    display: flex;
+    width: 305px;
+    margin-top: -438.5px;
+    margin-left: 727px;
+}
+.onedrive h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.onedrive a{
+    vertical-align: 5px;
+    color: rgb(0,103,184);
+}
+.onenote p, .onenote h3, .onenote a{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 1055px;
+    font-size: 15px;
+}
+.onenote p{
+    margin-top: -10px;
+    line-height: 25px;
+}
+#onenote{
+    display: flex;
+    width: 305px;
+    margin-top: -438.5px;
+    margin-left: 1055px;
+}
+.onenote h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.onenote a{
+    vertical-align: 5px;
+    color: rgb(0,103,184);
 }
