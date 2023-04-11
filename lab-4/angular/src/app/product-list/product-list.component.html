@@ -1,0 +1,30 @@
+<h2>Продукты</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a
+      [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]"
+    >
+      <!-- With *ngFor, the <div> repeats for each product in the list. -->
+      {{ product.name }}
+    </a>
+  </h3>
+  <div class="product-list-img">
+    <img src="{{ product.image1 }}" alt="img" class=".img" />
+    <img src="{{ product.image2 }}" alt="img" class=".img" />
+    <img src="{{ product.image3 }}" alt="img" class=".img" />
+  </div>
+
+  <p *ngIf="product.description">
+    <!-- use an *ngIf directive so that Angular only creates the <p> element if the current product has a description. -->
+    Описание: {{ product.description }}
+  </p>
+  <p *ngIf="product.rating">
+    Оценка: {{ product.rating }}
+  </p>
+  <button type="button" (click)="share(product.link)">Share</button>
+
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+</div>

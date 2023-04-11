@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 40px;
+  color: #ffffff;
+}
+
+.action-fields button {
+  height: 50%;
+  margin-left: 20px;
+  color: white;
+  background-color: #558eea;
+}
+
+.action-fields button:hover {
+  cursor: pointer;
+  background-color: rgb(3, 88, 138);
+}
+
+fieldset {
+  border: none;
+  width: inherit;
+  margin: auto;
+  padding: 0;
+}
+fieldset input{
+  padding: 3px;
+}
+
+fieldset input::placeholder{
+  text-align: center;
+}
+
+#photos-link {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
