@@ -1,6 +1,7 @@
 from django.http import JsonResponse
 from .models import Company, Vacancy
 
+
 # List of all Companies
 def company_list(request):
     companies = Company.objects.all()
@@ -14,7 +15,7 @@ def company_detail(request, company_id):
     except Company.DoesNotExist as e:
         return JsonResponse({'error': str(e)}, status=404)
 
-    return JsonResponse(Company.to_json(), status=200)
+    return JsonResponse(company.to_json(), status=200)
 
 
 # List of Vacancies by Company
@@ -24,7 +25,7 @@ def vacancies_by_company(request, vacancy_id):
     except Vacancy.DoesNotExist as e:
         return JsonResponse({'error': str(e)}, status=404)
 
-    return JsonResponse(Company.to_json(), status=200)
+    return JsonResponse(vacancies.to_json(), status=200)
 
 # List of all Vacancies
 def vacancy_list(request):
@@ -39,7 +40,7 @@ def vacancy_detail(request, vacancy_id):
     except Vacancy.DoesNotExist as e:
         return JsonResponse({'error': str(e)}, status=404)
 
-    return JsonResponse(Vacancy.to_json(), status=200)
+    return JsonResponse(vacancy.to_json(), status=200)
 
 # List of top 10 vacancies sorted by decreasing salary
 def top_ten_vacancies(request):
