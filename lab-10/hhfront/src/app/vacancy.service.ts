@@ -7,7 +7,7 @@ import {Vacancy} from "./models";
   providedIn: 'root'
 })
 export class VacancyService {
-  BASE_URL = 'http://127.0.0.1:8000'
+  BASE_URL = 'http://127.0.0.1:8001'
   constructor(private client: HttpClient) { }
 
   getVacancies(): Observable<Vacancy[]>{

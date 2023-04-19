@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Vacancy } from '../models';
 import { VacancyService } from '../vacancy.service';
 
@@ -7,7 +7,7 @@ import { VacancyService } from '../vacancy.service';
   templateUrl: './vacancy-top-ten.component.html',
   styleUrls: ['./vacancy-top-ten.component.css']
 })
-export class VacancyTopTenComponent {
+export class VacancyTopTenComponent implements OnInit{
   vacancies: Vacancy[] = [];
   constructor(private service: VacancyService){}
   ngOnInit(): void{

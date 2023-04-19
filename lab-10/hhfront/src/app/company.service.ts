@@ -7,7 +7,7 @@ import {Company, Vacancy} from "./models";
   providedIn: 'root'
 })
 export class CompanyService {
-  BASE_URL = 'http://127.0.0.1:8000'
+  BASE_URL = 'http://127.0.0.1:8001'
   constructor(private client: HttpClient) { }
   getCompanies(): Observable<Company[]>{
     return this.client.get<Company[]>(`${this.BASE_URL}/api/companies/`)

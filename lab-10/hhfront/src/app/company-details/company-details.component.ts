@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Company } from '../models';
 import { ActivatedRoute } from '@angular/router';
 import { CompanyService } from '../company.service';
@@ -8,7 +8,7 @@ import { CompanyService } from '../company.service';
   templateUrl: './company-details.component.html',
   styleUrls: ['./company-details.component.css']
 })
-export class CompanyDetailsComponent {
+export class CompanyDetailsComponent implements OnInit{
   company: Company;
   constructor( private route: ActivatedRoute, private service: CompanyService) {
     this.company = {} as Company;

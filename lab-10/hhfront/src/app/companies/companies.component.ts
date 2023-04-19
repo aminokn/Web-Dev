@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Company } from '../models';
 import { CompanyService } from '../company.service';
 
@@ -7,7 +7,7 @@ import { CompanyService } from '../company.service';
   templateUrl: './companies.component.html',
   styleUrls: ['./companies.component.css']
 })
-export class CompaniesComponent {
+export class CompaniesComponent implements OnInit{
   companies: Company[] = [];
   constructor(private service: CompanyService){}
   ngOnInit(): void{
